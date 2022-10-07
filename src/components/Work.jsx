@@ -7,7 +7,7 @@ const Work = () => {
         <Box bg={'teal.100'} py={5}>
             <Box
                 my={5}
-                mx={100}
+                mx={{ base: 50, lg: 200, md: 200 }}
                 display={'flex'}
                 justifyContent={{
                     base: 'center', lg: 'flex-start'
@@ -19,7 +19,7 @@ const Work = () => {
                 direction={{ base: "column", lg: "row" }}
                 spacing='5'
                 my={10}
-                mx={100}
+                mx={{ base: 50, lg: 200, md: 200 }}
                 p={10}
                 align='center'
                 bg={'teal.50'}

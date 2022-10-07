@@ -7,7 +7,7 @@ const Hero = () => {
             direction={{ base: "column", lg: "row" }}
             spacing='5'
             my={50}
-            mx={{ base: 50, md: 150 }}
+            mx={{ base: 50, lg: 200, md: 200 }}
             align='center'
         >
             <Circle>
