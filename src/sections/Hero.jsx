@@ -26,7 +26,7 @@ const Hero = () => {
                     </Highlight>
                 </Heading>
                 <Box m={3} >
-                    <Text fontSize='xl' >Soy egresado del <Link color={'gray.600'} href="https://www.soyhenry.com/">Bootcamp de SoyHenry</Link> y desarrollo proyectos de punta a punta haciendo el modelado de datos y el backend usando tecnologías como NodeJs, Express, Sequelize, para almacenar en bases de datos SQL como Postgres, y/o NoSQL como MongoDb, creando con ellos REST API que se comunican con el frontend que visualiza el usuario a través de interfaces creadas y gestionadas con ReactJs y Redux.</Text>
+                    <Text fontSize='xl' >Soy egresado del <Link color={'gray.600'} href="https://www.soyhenry.com/">Bootcamp de SoyHenry</Link> y desarrollo proyectos de punta a punta haciendo el modelado de datos y el backend usando tecnologías como NodeJs, Express, Sequelize, que almacenan información en bases de datos SQL como Postgres, y/o NoSQL como MongoDb, creando así REST API que se comunican con el frontend que visualiza el usuario a través de interfaces creadas y gestionadas con ReactJs y Redux.</Text>
                 </Box>
             </Box>
         </Stack>
