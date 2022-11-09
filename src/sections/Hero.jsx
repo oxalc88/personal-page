@@ -26,7 +26,7 @@ const Hero = () => {
                     </Highlight>
                 </Heading>
                 <Box m={3} >
-                    <Text fontSize='xl' >Egresado del bootcamp de soyHenry con habilidad de crear aplicaciones de punta a punta usando tecnologías como ReactJS y Redux en el Frontend, junto a tecnologías como NodeJs, Express y Sequelize en el Backend que hacen conexiones con bases de datos Relacionales, como PostgresSQL, y no relacionales, como MongoDB, para mostrarle la información de la aplicación al usuario.</Text>
+                    <Text fontSize='xl' >Egresado del bootcamp de soyHenry y desarrollo proyectos de punta a punta haciendo el modelado de datos y el backend usando tecnologías como NodeJs, Express, Sequelize, para almacenar en bases de datos SQL como Postgres, y/o NoSQL como MongoDb, creando con ellos REST API que se comunican con el frontend que visualiza el usuario a través de interfaces creadas y gestionadas con ReactJs y Redux.</Text>
                 </Box>
             </Box>
         </Stack>
