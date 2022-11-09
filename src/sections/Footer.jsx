@@ -11,10 +11,10 @@ const Footer = () => {
                 <HStack
                     spacing='5'
                 >
-                    <Link href="https://www.linkedin.com/in/rolando-quispe/" >
+                    <Link href="https://www.linkedin.com/in/rolando-quispe/" isExternal>
                         <Icon as={SiLinkedin} w={8} h={8} _hover={{ color: 'teal.500' }} />
                     </Link>
-                    <Link href="https://github.com/oxalc88">
+                    <Link href="https://github.com/oxalc88" isExternal>
                         <Icon as={SiGithub} w={8} h={8} _hover={{ color: 'teal.500' }} />
                     </Link>
                 </HStack>
