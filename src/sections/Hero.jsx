@@ -1,4 +1,4 @@
-import { Box, Center, Circle, Heading, Highlight, Image, Stack, Text } from "@chakra-ui/react"
+import { Box, Center, Circle, Heading, Highlight, Image, Link, Stack, Text } from "@chakra-ui/react"
 import muestra from '../assets/myAvatar.png'
 
 const Hero = () => {
