@@ -4,6 +4,7 @@ import Project from "../components/Project";
 import countries from '../assets/Countries.jpeg';
 import group from '../assets/PanelAdminHome.png';
 import valiente from '../assets/ValientePublicidad.png';
+import datacademy from '../assets/Datacademy.png'
 
 const techGrupal = [
     { name: 'React', url: 'https://es.reactjs.org/' },
@@ -35,6 +36,13 @@ const valientePub = [
     { name: 'HTML', url: 'https://developer.mozilla.org/es/docs/Web/HTML' },
     { name: 'CSS', url: 'https://developer.mozilla.org/es/docs/Web/CSS' },
     { name: 'SASS', url: 'https://sass-lang.com/' },
+]
+
+const techData = [
+    { name: 'Python', url: 'https://www.python.org/' },
+    { name: 'Pandas', url: 'https://pandas.pydata.org/' },
+    { name: 'Seaborn', url: 'https://seaborn.pydata.org/' },
+    { name: 'Squarify', url: 'https://pypi.org/project/squarify/' },
 ]
 
 const Work = () => {
@@ -97,6 +105,31 @@ const Work = () => {
                         <Heading m={2} fontSize={'2xl'}>Tecnologías Utilizadas</Heading>
                         <Wrap spacing={3}>
                             {techGrupal.map(t => (
+                                <WrapItem key={t.name} alignItems={'center'}>
+                                    <Icon as={MdCheckCircle} color='green.500' />
+                                    <Link color={'gray.600'} href={t.url}>{t.name}</Link>
+                                </WrapItem>
+                            )
+                            )}
+                        </Wrap>
+                    </>
+                }
+            />
+            <Project
+                link={'https://deepnote.com/workspace/rolando-oxalc-557e7a96-52f8-4b62-81f9-8afe449dec1b/project/Proyecto-Datacademy-af357e8c-2c11-48ff-be45-e847dafd06d3/notebook/datacademy-platzi%2Ftemplate_proyecto_datacademy-d7b81b029f8744f8b616103dc99be7fb'}
+                title={'Datacademy'}
+                year={2022}
+                type={'Data Analysis'}
+                img={datacademy}
+                alt={'Proyecto Datacademy'}
+                children={
+                    <>
+                        <Text fontSize='lg'>
+                            Análisis de los 25 retailers más grandes de EEUU realizado con Python haciendo uso las librerías Pandas,  matplotlib, squarify y seaborn para el reto <Link color={'gray.600'} href="https://platzi.com/blog/escuela-data-ia-datacademy/?utm_source=twitter&utm_medium=organic&utm_campaign=LATAM_TW_BLOG_MF_1221_datacademy">Datacademy de Platzi</Link>.
+                        </Text>
+                        <Heading m={2} fontSize={'2xl'}>Tecnologías Utilizadas</Heading>
+                        <Wrap spacing={3}>
+                            {techData.map(t => (
                                 <WrapItem key={t.name} alignItems={'center'}>
                                     <Icon as={MdCheckCircle} color='green.500' />
                                     <Link color={'gray.600'} href={t.url}>{t.name}</Link>
