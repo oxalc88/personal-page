@@ -1,8 +1,9 @@
 import { Box, Center, Circle, Heading, Highlight, Icon, Image, Link, List, ListIcon, ListItem, Spacer, Stack, Text, Tooltip, Wrap, WrapItem } from "@chakra-ui/react"
-import countries from '../assets/Countries.jpeg'
-import group from '../assets/PanelAdminHome.png'
-import Project from "../components/Project"
 import { MdCheckCircle, MdSettings } from "react-icons/md";
+import Project from "../components/Project";
+import countries from '../assets/Countries.jpeg';
+import group from '../assets/PanelAdminHome.png';
+import valiente from '../assets/ValientePublicidad.png';
 
 const techGrupal = [
     { name: 'React', url: 'https://es.reactjs.org/' },
@@ -28,6 +29,12 @@ const techIndividual = [
     { name: 'ExpressJs', url: 'https://expressjs.com/es/' },
     { name: 'Sequelize', url: 'https://sequelize.org/' },
     { name: 'Docker', url: 'https://www.docker.com/' },
+]
+
+const valientePub = [
+    { name: 'HTML', url: 'https://developer.mozilla.org/es/docs/Web/HTML' },
+    { name: 'CSS', url: 'https://developer.mozilla.org/es/docs/Web/CSS' },
+    { name: 'SASS', url: 'https://sass-lang.com/' },
 ]
 
 const Work = () => {
@@ -90,6 +97,31 @@ const Work = () => {
                         <Heading m={2} fontSize={'2xl'}>Tecnologías Utilizadas</Heading>
                         <Wrap spacing={3}>
                             {techGrupal.map(t => (
+                                <WrapItem key={t.name} alignItems={'center'}>
+                                    <Icon as={MdCheckCircle} color='green.500' />
+                                    <Link color={'gray.600'} href={t.url}>{t.name}</Link>
+                                </WrapItem>
+                            )
+                            )}
+                        </Wrap>
+                    </>
+                }
+            />
+            <Project
+                link={'https://proyecto-valiente.netlify.app/index.html'}
+                title={'Valiente Publicidad'}
+                year={2021}
+                type={'Frontend'}
+                img={valiente}
+                alt={'Valiente Publicidad'}
+                children={
+                    <>
+                        <Text fontSize='lg'>
+                            Pagina web coporativa de agencia de publicidad, realizado con HTML y CSS construido con SASS.
+                        </Text>
+                        <Heading m={2} fontSize={'2xl'}>Tecnologías Utilizadas</Heading>
+                        <Wrap spacing={3}>
+                            {valientePub.map(t => (
                                 <WrapItem key={t.name} alignItems={'center'}>
                                     <Icon as={MdCheckCircle} color='green.500' />
                                     <Link color={'gray.600'} href={t.url}>{t.name}</Link>
