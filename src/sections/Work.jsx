@@ -75,7 +75,7 @@ const Work = () => {
                 }
             />
             <Project
-                link={'https://heladitos-app.vercel.app/'}
+                link={'https://heladitos-app.netlify.app/'}
                 title={'Heladitos App'}
                 year={2022}
                 type={'Full Stack'}
